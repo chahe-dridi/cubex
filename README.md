@@ -6,7 +6,13 @@
 
 It scrambles and solves itself in an endless loop, tumbles gently in 3D, and — when you click it — opens a fullscreen playground where you can drag faces to turn them or drive it with Rubik's-notation buttons. Fully themeable, ~8&nbsp;kB gzipped, zero configuration to drop in.
 
+[![npm](https://img.shields.io/npm/v/cubex?color=E05C28)](https://www.npmjs.com/package/cubex)
+[![license](https://img.shields.io/github/license/chahe-dridi/cubex?color=00C9A7)](./LICENSE)
+[![stars](https://img.shields.io/github/stars/chahe-dridi/cubex?style=social)](https://github.com/chahe-dridi/cubex/stargazers)
+
 [Features](#features) · [Install](#install) · [Quick start](#quick-start) · [Props](#props) · [Theming](#theming) · [Advanced](#advanced)
+
+**Like it? [⭐ Star the repo](https://github.com/chahe-dridi/cubex) — it genuinely helps others find it.**
 
 </div>
 
@@ -166,6 +172,16 @@ npm install
 npm run dev      # runs the interactive demo in example/
 npm run build    # builds the library into dist/
 ```
+
+## Support
+
+If cubex saved you some time or just made you smile:
+
+- ⭐ **[Star it on GitHub](https://github.com/chahe-dridi/cubex)** — the single biggest thing that helps others discover it.
+- 🐦 **Share it** — a quick post or link to the repo goes a long way.
+- 🐛 **[Open an issue](https://github.com/chahe-dridi/cubex/issues)** for bugs or ideas, or send a PR.
+
+Every star and share is genuinely appreciated. 🙏
 
 ## License
 
