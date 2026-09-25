@@ -28,9 +28,11 @@ export default defineConfig(({ command }) => {
             'framer-motion',
           ],
           output: {
+            exports: 'named',
             globals: {
               react: 'React',
               'react-dom': 'ReactDOM',
+              'react/jsx-runtime': 'jsxRuntime',
               three: 'THREE',
               '@react-three/fiber': 'ReactThreeFiber',
               '@react-three/drei': 'Drei',
