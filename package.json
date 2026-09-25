@@ -1,0 +1,69 @@
+{
+  "name": "cubex",
+  "version": "0.1.0",
+  "description": "A beautiful, self-solving 3D Rubik's Cube React component — auto scramble/solve loop, drag-to-turn interaction, and a fully themeable palette. Built on react-three-fiber.",
+  "type": "module",
+  "license": "MIT",
+  "author": "chahe-dridi",
+  "homepage": "https://github.com/chahe-dridi/cubex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chahe-dridi/cubex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chahe-dridi/cubex/issues"
+  },
+  "keywords": [
+    "react",
+    "rubiks-cube",
+    "rubik",
+    "cube",
+    "three",
+    "three-js",
+    "react-three-fiber",
+    "3d",
+    "animation",
+    "hero",
+    "component"
+  ],
+  "main": "./dist/cubex.umd.cjs",
+  "module": "./dist/cubex.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/cubex.js",
+      "require": "./dist/cubex.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --outDir example-dist"
+  },
+  "peerDependencies": {
+    "@react-three/drei": ">=9.0.0",
+    "@react-three/fiber": ">=8.0.0",
+    "framer-motion": ">=10.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "three": ">=0.150.0"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "framer-motion": "^11.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.186.1",
+    "vite": "^5.3.4"
+  }
+}
