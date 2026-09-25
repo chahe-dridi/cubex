@@ -6,7 +6,7 @@
 
 It scrambles and solves itself in an endless loop, tumbles gently in 3D, and — when you click it — opens a fullscreen playground where you can drag faces to turn them or drive it with Rubik's-notation buttons. Fully themeable, ~8&nbsp;kB gzipped, zero configuration to drop in.
 
-[![npm](https://img.shields.io/npm/v/cubex?color=E05C28)](https://www.npmjs.com/package/cubex)
+[![npm](https://img.shields.io/npm/v/react-rubiks-cube?color=E05C28)](https://www.npmjs.com/package/react-rubiks-cube)
 [![license](https://img.shields.io/github/license/chahe-dridi/cubex?color=00C9A7)](./LICENSE)
 [![stars](https://img.shields.io/github/stars/chahe-dridi/cubex?style=social)](https://github.com/chahe-dridi/cubex/stargazers)
 
@@ -30,8 +30,10 @@ It scrambles and solves itself in an endless loop, tumbles gently in 3D, and —
 ## Install
 
 ```bash
-npm install cubex
+npm install react-rubiks-cube
 ```
+
+> The package is published as **`react-rubiks-cube`**; the project/brand name is **cubex**. Import from `react-rubiks-cube`.
 
 `cubex` relies on a few peers you probably already have in a react-three project. Install them if you don't:
 
@@ -47,7 +49,7 @@ npm install react react-dom three @react-three/fiber @react-three/drei framer-mo
 ## Quick start
 
 ```jsx
-import { RubiksCube } from 'cubex'
+import { RubiksCube } from 'react-rubiks-cube'
 
 export default function App() {
   return <RubiksCube size={400} />
@@ -110,7 +112,7 @@ Pass a **partial** palette and it's merged over a base. Pick the base with `base
 You can also import the built-in palettes and helper directly:
 
 ```jsx
-import { BRAND_PALETTE, CLASSIC_PALETTE, resolvePalette } from 'cubex'
+import { BRAND_PALETTE, CLASSIC_PALETTE, resolvePalette } from 'react-rubiks-cube'
 ```
 
 ## Advanced
@@ -119,7 +121,7 @@ Want the cube inside your own scene? Import the underlying pieces and render the
 
 ```jsx
 import { Canvas } from '@react-three/fiber'
-import { AutoCubeScene, Lights, resolvePalette } from 'cubex'
+import { AutoCubeScene, Lights, resolvePalette } from 'react-rubiks-cube'
 
 const palette = resolvePalette({ base: 'classic' })
 
@@ -138,7 +140,7 @@ Building a custom control UI? `InteractiveCubeScene` reads moves from a queue re
 ```jsx
 import { useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { InteractiveCubeScene, MOVE_GROUPS, Lights, resolvePalette } from 'cubex'
+import { InteractiveCubeScene, MOVE_GROUPS, Lights, resolvePalette } from 'react-rubiks-cube'
 
 function Playground() {
   const queue = useRef([])            // push { axis, layer, dir } to turn a slice
