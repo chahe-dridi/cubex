@@ -6,11 +6,40 @@
     <title>cubex — demo</title>
     <style>
       * { margin: 0; box-sizing: border-box; }
+      html, body { height: 100%; }
       body {
         background: radial-gradient(120% 120% at 50% 0%, #191714 0%, #100f0d 60%, #0a0908 100%);
         color: #f0ebe3;
         font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .stage {
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(8px, 2vh, 28px);
+        padding: 16px;
+      }
+
+      .stage h1 { font-size: clamp(34px, 6vw, 64px); font-weight: 800; letter-spacing: -0.04em; }
+      .stage p  { opacity: 0.6; margin-top: 6px; font-size: clamp(13px, 1.5vw, 17px); }
+
+      /* Three cubes, always on one row, sized so the whole page fits one screen. */
+      .row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: clamp(8px, 2vw, 36px);
+        align-items: center;
+        justify-content: center;
+      }
+      .row figure { margin: 0; text-align: center; }
+      .row figcaption { opacity: 0.5; margin-top: 6px; font-size: clamp(11px, 1vw, 14px); }
+
+      /* On narrow / portrait screens, let them wrap instead of overflowing. */
+      @media (max-width: 760px) {
+        .row { flex-wrap: wrap; }
       }
     </style>
   </head>
