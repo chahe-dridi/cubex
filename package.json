@@ -1,6 +1,6 @@
 {
   "name": "react-rubiks-cube",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A beautiful, self-solving 3D Rubik's Cube React component — auto scramble/solve loop, drag-to-turn interaction, and a fully themeable palette. Built on react-three-fiber.",
   "type": "module",
   "license": "MIT",
