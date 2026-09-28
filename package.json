@@ -46,7 +46,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --outDir example-dist",
+    "build:demo": "vite build --config vite.demo.config.js",
+    "preview": "vite preview --config vite.demo.config.js",
     "prepare": "vite build"
   },
   "peerDependencies": {
