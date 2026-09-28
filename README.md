@@ -182,7 +182,30 @@ Contributions are very welcome — the repo has a set of scoped issues to pick f
 - 🟢 **Good first issues** — [more built-in palettes](https://github.com/chahe-dridi/cubex/issues/7), [`prefers-reduced-motion` support](https://github.com/chahe-dridi/cubex/issues/1), [a preview GIF](https://github.com/chahe-dridi/cubex/issues/3)
 - ✨ **Features** — [imperative `scramble()`/`solve()` API](https://github.com/chahe-dridi/cubex/issues/4), [keyboard controls](https://github.com/chahe-dridi/cubex/issues/5), [NxN cubes](https://github.com/chahe-dridi/cubex/issues/6)
 
-See all [open issues](https://github.com/chahe-dridi/cubex/issues). Grab one, comment to claim it, and open a PR from a feature branch.
+See all [open issues](https://github.com/chahe-dridi/cubex/issues). Grab one, comment to claim it, then follow the flow below.
+
+### Branching model
+
+| Branch    | Role                                                                 |
+| --------- | ------------------------------------------------------------------- |
+| `master`  | Stable / release branch. This is what npm publishes and what `npm install github:chahe-dridi/cubex` pulls. Never push straight to it. |
+| `dev`     | Integration branch. All work lands here first and is tested together. |
+| `feat/*`  | Your working branch, one per issue.                                 |
+
+**All pull requests target `dev`, not `master`.** Once changes on `dev` are tested and stable, a maintainer merges `dev → master` and cuts a release.
+
+```bash
+# 1. Branch off dev
+git checkout dev && git pull
+git checkout -b feat/reduced-motion    # e.g. issue #1
+
+# 2. Do the work, then push
+git push -u origin feat/reduced-motion
+
+# 3. Open a PR into dev
+```
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
 
 ## Support
 
