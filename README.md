@@ -181,7 +181,6 @@ Contributions are very welcome — the repo has a set of scoped issues to pick f
 
 - 🟢 **Good first issues** — [more built-in palettes](https://github.com/chahe-dridi/cubex/issues/7), [`prefers-reduced-motion` support](https://github.com/chahe-dridi/cubex/issues/1), [a preview GIF](https://github.com/chahe-dridi/cubex/issues/3)
 - ✨ **Features** — [imperative `scramble()`/`solve()` API](https://github.com/chahe-dridi/cubex/issues/4), [keyboard controls](https://github.com/chahe-dridi/cubex/issues/5), [NxN cubes](https://github.com/chahe-dridi/cubex/issues/6)
-- 📖 **Docs/infra** — [hosted live demo](https://github.com/chahe-dridi/cubex/issues/2)
 
 See all [open issues](https://github.com/chahe-dridi/cubex/issues). Grab one, comment to claim it, and open a PR from a feature branch.
 
