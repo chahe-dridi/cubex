@@ -10,6 +10,8 @@ It scrambles and solves itself in an endless loop, tumbles gently in 3D, and —
 [![license](https://img.shields.io/github/license/chahe-dridi/cubex?color=00C9A7)](./LICENSE)
 [![stars](https://img.shields.io/github/stars/chahe-dridi/cubex?style=social)](https://github.com/chahe-dridi/cubex/stargazers)
 
+### [▶ Live demo](https://cubex-fawn-xi.vercel.app)
+
 [Features](#features) · [Install](#install) · [Quick start](#quick-start) · [Props](#props) · [Theming](#theming) · [Advanced](#advanced)
 
 **Like it? [⭐ Star the repo](https://github.com/chahe-dridi/cubex) — it genuinely helps others find it.**
