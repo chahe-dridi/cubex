@@ -21,6 +21,7 @@ const ROOT = resolve(import.meta.dirname, '..')
 const SITE = join(ROOT, 'example-dist')
 const OUT = join(ROOT, '.github/media')
 const FPS = 12
+const SPEED = 0.7 // playback speed: below 1 plays the clips slower than real time, easier to follow
 
 const chromePath = process.env.CHROME_PATH || [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -67,7 +68,7 @@ function encode(frames, file) {
   picked.forEach((f, i) => sample.set(f.data, i * width * height * 4))
   const palette = quantize(sample, 128)
   const gif = GIFEncoder()
-  for (const f of frames) gif.writeFrame(applyPalette(f.data, palette), width, height, { palette, delay: Math.round(1000 / FPS) })
+  for (const f of frames) gif.writeFrame(applyPalette(f.data, palette), width, height, { palette, delay: Math.round(1000 / FPS / SPEED) })
   gif.finish()
   writeFileSync(file, gif.bytes())
   console.log(`readme-media: ${file.split(/[\\/]/).pop()}  ${(statSync(file).size / 1024).toFixed(0)} KB, ${frames.length} frames`)
