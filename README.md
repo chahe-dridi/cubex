@@ -7,10 +7,12 @@
 It scrambles and solves itself in an endless loop, tumbles gently in 3D, and — when you click it — opens a fullscreen playground where you can drag faces to turn them or drive it with Rubik's-notation buttons. Fully themeable, ~8&nbsp;kB gzipped, zero configuration to drop in.
 
 [![npm](https://img.shields.io/npm/v/react-rubiks-cube?color=E05C28)](https://www.npmjs.com/package/react-rubiks-cube)
-[![license](https://img.shields.io/github/license/chahe-dridi/cubex?color=00C9A7)](./LICENSE)
+[![license](https://img.shields.io/github/license/chahe-dridi/cubex?color=00C9A7)](https://github.com/chahe-dridi/cubex/blob/master/LICENSE)
 [![stars](https://img.shields.io/github/stars/chahe-dridi/cubex?style=social)](https://github.com/chahe-dridi/cubex/stargazers)
 
 ### [▶ Live demo](https://cubex-fawn-xi.vercel.app)
+
+<a href="https://cubex-fawn-xi.vercel.app"><img src="https://raw.githubusercontent.com/chahe-dridi/cubex/master/.github/media/hero.gif" alt="Three cubex cubes, in the brand, classic and a custom purple palette, scrambling and solving themselves while they tumble in 3D" width="760"></a>
 
 [Features](#features) · [Install](#install) · [Quick start](#quick-start) · [Props](#props) · [Theming](#theming) · [Advanced](#advanced)
 
@@ -28,6 +30,12 @@ It scrambles and solves itself in an endless loop, tumbles gently in 3D, and —
 - 🪶 **Light** — one shared geometry, pooled quaternions, no per-frame allocations. ~8&nbsp;kB gzipped, everything heavy stays a peer dependency.
 - 🧩 **Composable** — use the one-line `<RubiksCube />`, or drop the underlying scenes into your own `<Canvas>`.
 - 🔒 **TypeScript** — full typings included.
+
+### Click a cube to play with it
+
+<img src="https://raw.githubusercontent.com/chahe-dridi/cubex/master/.github/media/playground.gif" alt="The fullscreen playground: the cube turns as the R, U, F, L and D notation buttons are pressed in the control panel" width="560">
+
+Drag a face to turn a slice, orbit to look around, or use the Rubik's-notation buttons. Left alone, it undoes your moves and solves itself.
 
 ## Install
 
@@ -175,6 +183,7 @@ cd cubex
 npm install
 npm run dev      # runs the interactive demo in example/
 npm run build    # builds the library into dist/
+npm run media    # re-records the README GIFs (needs Chrome; run build:demo first)
 ```
 
 ## Roadmap & contributing
@@ -207,7 +216,7 @@ git push -u origin feat/reduced-motion
 # 3. Open a PR into dev
 ```
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
+See [CONTRIBUTING.md](https://github.com/chahe-dridi/cubex/blob/master/CONTRIBUTING.md) for the full guide.
 
 ## Support
 
@@ -221,4 +230,4 @@ Every star and share is genuinely appreciated. 🙏
 
 ## License
 
-[MIT](./LICENSE) © chahe-dridi
+[MIT](https://github.com/chahe-dridi/cubex/blob/master/LICENSE) © chahe-dridi
